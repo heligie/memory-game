@@ -17,12 +17,13 @@
 }
 
 :root {
+  --black: #000000;
   --bouquet: #9a8c98;
   --index-hight: 15;
   --index-low: 5;
   --index-middle: 10;
   --poppins-black: "Poppins Black", sans-serif;
-  --victoria: #58508d;
+  --school-bus-yellow: #f6da09;
   --white: #ffffff;
   --white-smoke: #f8f8f8;
 }
@@ -82,12 +83,104 @@ a {
   padding: 0 30px;
 }
 
+/* INTRO */
+
+.intro {
+  display: grid;
+  margin: 30px 0;
+
+  justify-items: center;
+  row-gap: 20px;
+}
+
+.intro__title {
+  position: relative;
+
+  margin: 0;
+
+  font-size: 100px;
+  line-height: 80px;
+  text-align: center;
+  color: var(--bouquet);
+  text-transform: uppercase;
+}
+
+.intro__title-mark {
+  position: absolute;
+  left: -25px;
+
+  display: block;
+  padding: 8px;
+
+  font-size: 20px;
+  line-height: 15px;
+  color: var(--black);
+
+  background-color: var(--school-bus-yellow);
+  transform: rotate(-15deg);
+}
+
+.intro__title-word {
+  display: block;
+
+  font-size: 95px;
+  line-height: 70px;
+
+  transform: rotate(-4deg);
+  opacity: 0.6;
+}
+
+.intro__desc {
+  margin: 0;
+
+  font-size: 40px;
+  line-height: 35px;
+  text-align: center;
+  color: var(--bouquet);
+  text-transform: lowercase;
+
+  opacity: 0.4;
+}
+
+.intro__button {
+  position: relative;
+
+  display: flex;
+  padding: 10px;
+
+  font-size: 40px;
+  line-height: 25px;
+  font-family: var(--poppins-black);
+  text-transform: lowercase;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.intro__button span {
+  z-index: 1;
+}
+
+.intro__button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 100%;
+  height: 15px;
+
+  background-color: var(--school-bus-yellow);
+  transform: translateY(-50%);
+}
+
 /* GAME INTERFACE */
 
 .game {
   position: relative;
 
-  display: flex;
+  display: none;
   height: 100%;
   margin: 30px 0;
   padding: 50px 0;
@@ -205,7 +298,7 @@ a {
 }
 
 .footer__github-link:hover {
-  color: var(--victoria);
+  color: var(--school-bus-yellow);
 
   transition-duration: 0.6s;
 }
