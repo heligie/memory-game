@@ -1,0 +1,19 @@
+const KEY = 'the last ten matched corgis';
+const START_TIME = 60;
+const MAX_POINTS = 10;
+const RECENT_GAMES_NUMBER = 10;
+const NUMBER_OF_CARDS = 20;
+const NUMBER_OF_IMAGES = 10;
+const DEFAULT_DELAY = 1000;
+const MIN_DELAY = 500;
+
+export {
+  KEY,
+  START_TIME,
+  MAX_POINTS,
+  RECENT_GAMES_NUMBER,
+  NUMBER_OF_CARDS,
+  NUMBER_OF_IMAGES,
+  DEFAULT_DELAY,
+  MIN_DELAY
+};

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory game</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <section class="game">
+        <h1 class="visually-hidden">Test your memory with this memory game.</h1>
+          <div class="game__wrapper time">
+            <span class="game__timer">0:<span class="seconds">00</span></span>
+            <span class="game__best-time">Best time: 0:<span class="best-seconds">00</span></span>
+          </div>
+          <div class="game__wrapper score">
+            <span class="game__last-score">Last score: 0</span>
+            <span class="game__score">0</span>
+          </div>
+          <div class="field" id="field">
+            <!-- Cards container -->
+          </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <svg class="footer__icon" width="15" height="15" aria-hidden="true" focusable="false">
+          <use href="./assets/svg/sprite.svg#code"></use>
+        </svg>
+        <span class="footer__copyright">Coded by <a class="footer__github-link" aria-label="GitHub profile." href="https://github.com/heligie" target="_blank" rel="nofollow noopener">heligie</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <template id="card">
+    <div class="card">
+      <img class="card__img" width="100" height="100" src="./assets/content/1.gif" alt="Memo card.">
+    </div>
+  </template>
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
